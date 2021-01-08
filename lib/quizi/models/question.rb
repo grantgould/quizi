@@ -12,14 +12,21 @@ class Quizi::Question < Quizi::Model
     @answers
   end
 
-  def guess(number)
-    @answers[number] == @correct_answer
+  def puts_answers
+    puts "Select your answer"
+    @answers.each_with_index do |answer, index|
+      puts "#{index + 1}: #{answer}"
+    end
+  end
+
+  def guess(order)
+    @answers[order - 1] == @correct_answer
   end
 
   def self.from_opentdb(category = 9)
     questions = []
 
-    api = Quizi::API.new("api.php", options: {amount: 10, category: 9})
+    api = Quizi::API.new("api.php", options: {amount: 10, category: category})
 
     json = api.get_data()
 
