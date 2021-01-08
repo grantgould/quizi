@@ -1,0 +1,17 @@
+{
+    "response_code": 0,
+    "results": [
+        {
+            "category": "Entertainment: Video Games",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "One of the early prototypes of the Sega Dreamcast controller resembled which of the following?",
+            "correct_answer": "Television Remote",
+            "incorrect_answers": [
+                "Tablet",
+                "Hairdryer",
+                "Flip Phone"
+            ]
+        }
+    ]
+}
