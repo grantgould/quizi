@@ -41,7 +41,3 @@ class Quizi::Question < Quizi::Model
     questions
   end
 end
-
-categories = Category.from_opentdb
-
-Category.from_opentdb(category[0].id)

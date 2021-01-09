@@ -13,6 +13,8 @@ class Quizi::API < Quizi::Model
   def get_data()
     response = RestClient.get(uri)
     JSON.parse(response)
+  rescue e
+    puts "Please reconnect to the internet."
   end
 
   def uri

@@ -6,7 +6,6 @@ class Quizi::Game < Quizi::Model
   AMMOUNT = 10
 
   def get_categories 
-    # API CALL
     Quizi::Category.from_opentdb
   end
   
